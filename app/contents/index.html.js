@@ -4,17 +4,17 @@ var date = dateformat(new Date(), 'yyyy');
 
 module.exports = {
     document: {
-        title: "Eric MOREL"
+        title: "Mona GUINEL"
     },
     contact: {
         title: 'Contact',
         item1: {
             caption: 'Téléphone ',
-            data: '06 19 70 70 09'
+            data: '06-07-45-72-43'
         },
         item2: {
             caption: 'E-Mail ',
-            data: '<a href="mailto:eric.morel35@gmail.com?subject=Contact">eric.morel35@gmail.com</a>'
+            data: '<a href="mailto:mimimoys@yahoo.fr?subject=Contact">mimimoys@yahoo.fr</a>'
         },
         item3: {
             caption: 'Adresse ',
@@ -24,36 +24,31 @@ module.exports = {
     skills: {
         title: 'Compétences',
         item1:{
-            subject: 'Java (Spring, Tomcat, Maven, Mockito), Kotlin',
-            mark: 'skills__item-bar--very-good'
+            subject: 'Patience'
         },
         item2:{
-            subject: 'IDE (Eclipse et IntelliJ)',
-            mark: 'skills__item-bar--average'
+            subject: 'Empathie'
         },
         item3:{
-            subject: 'REST, SOAP',
-            mark: 'skills__item-bar--very-good'
+            subject: 'Aptitudes aux premiers secours'
         },
         item4:{
-            subject: 'Intégration continue (GitlabCI et Jenkins)',
-            mark: 'skills__item-bar--good'
+            subject: 'Sens de l\'écoute'
         },
         item5:{
-            subject: 'Bases de données (Oracle, MongoDB, MariaDB)',
-            mark: 'skills__item-bar--good'
+            subject: 'Respect du secret professionnel'
         },
         item6:{
-            subject: 'Système (Linux, Windows)',
-            mark: 'skills__item-bar--good'
+            subject: 'Travail en équipe'
         },
-		item7:{
-            subject: 'Docker',
-            mark: 'skills__item-bar--good'
+	item7:{
+            subject: 'Créativité'
         },
-		item8:{
-            subject: 'Git',
-            mark: 'skills__item-bar--good'
+	item8:{
+            subject: 'Ponctualité'
+        },
+        item9:{
+            subject: 'Organisée'
         }
     },
     lang: {
@@ -65,93 +60,101 @@ module.exports = {
             },
             lang2: {
                 caption: 'Anglais ',
-                level: 'technique'
+                level: 'notions'
             }
         }
     },
     aboutMe: {
-        firstName: 'Eric',
-        lastName: 'Morel',
-        position: 'Développeur Java/JEE',
-        summary: `Développeur avec 14 ans d'expérience en quête d'une mission permettant de devenir leader technique. Je suis passioné par les nouvelles technologies et l'apprentissage de nouvelles pratiques. J'aime le travail en équipe.`
+        firstName: 'Mona',
+        lastName: 'Guinel',
+        position: 'Intervenante auprès d\'enfants',
+        summary: `Autonome et enthousiaste, je sais animer des activités éducatives et ludiques, assurer la sécurité des enfants et favoriser leur socialisation. <br>Bienveillante et organisée, je recherche un poste d'Auxiliaire de puériculture, pour mettre en pratique mes connaissances et contribuer au bien-être des enfants dans un environnement stimulant et sécurisant.`
     },
     experience:{
         title : 'Expériences',
         item1: {
             period: {
-                start: 2012,
+                start: "06/2012",
                 end: date,
             },
-            location: 'Cesson Sévigné',
-            firm: 'SII',
-            position: 'Développeur Java',
-            summary: `- 4 missions pour la TV d\'Orange France sur des technologies très différentes : JEE/Spring, Shell, Dojo<br>
-			Accompagnement d'alternants dans le cadre de refonte technique d'applications avec migration vers Java 11 (séparation back/front)<br>
-			- 1 mission pour OBS (Développement full stack sur des applicatifs permettant la gestion de ressources réseaux)<br>
-			- 3 missions en prestation pour Sopra Steria avec SII : sur le plateau Canal+, pour Edelia (filiale d'EDF) et dans les locaux de SFR à Rennes (MEP d'applicatif et astreintes le week end).<br>
-			`
+            location: 'St Erblon',
+            firm: 'La Poste / CDI',
+            position: 'Agent de La Poste',
+            summary: `- Exécution rapide et efficace des tâches assignées.<br>
+- Collaboration en équipe en communiquant, en partageant les idées et en mutualisant les efforts.<br>
+- Organisation du travail en priorisant les tâches dans le but de répondre aux attentes et de respecter les délais.<br>
+- Adaptation rapide à différents interlocuteurs et différentes situations.`
         },
-		item2: {
+	item2: {
             period: {
-                start: 2010,
-                end: 2012,
+                start: "03/2010",
+                end: "02/2011",
             },
-            location: 'Orvault',
-            firm: 'Accenture Technologies Solutions',
-            position: 'Développeur Java',
-            summary: `Développeur Back et Front sur le projet Quartzi permettant le rapprochement des SI de Vinci et Cegelec<br>
-			Accueil et assistance d'un alternant sur le projet`
+            location: 'Redon',
+            firm: 'Mairie de Redon / Contrat d\'Accompagnement dans l\'Emploi',
+            position: 'Agent de services en écoles primaires',
+            summary: `- Nettoyage courant des infrastructures : vidage des poubelles, aspiration des bureaux, lavage des sols et désinfection des sanitaires.<br>
+- Surveillance des élèves durant les heures de repas pour assurer un environnement paisible.`
         },
-		item3: {
-			period: {
-                start: 2007,
-                end: 2010,
+	item3: {
+	    period: {
+                start: "03/2007",
+                end: "04/2007",
             },
-            location: 'Vannes',
-            firm: 'SAB Ingénierie Informatique',
-            position: 'Développeur Cobol/Java',
-            summary: `Maintenance et évolution des applicatifs anti blanchiment du progiciel bancaire SAB<br>
-			Participation à l'élaboration d'un atelier de développement basé sur Eclipse RCP`
-		}
-			
+            location: 'Douala / Cameroun',
+            firm: 'Orphelinat St Jean de Deido / Stage',
+            position: 'Animatrice pour enfants',
+            summary: `- Organisation de jeux et activités en plein air pour favoriser l'épanouissement des enfants.<br>
+- Assistance aux enfants dans l'apprentissage des compétences de vie comme la propreté et l'habillage.<br>
+- Encadrement des enfants pendant les repas et les siestes.`
+	}		
     },
     education: {
         title: 'Diplômes',
-		item1: {
+	item1: {
             period: {
-                start: 2018,
-                end: 2019,
+                start: 2010,
+                end: 2011,
             },
-            location: 'Rennes',
-            school: 'ISTIC',
-            degree: 'Master Ingénierie logicielle',
+            location: 'Nantes',
+            school: 'CEMEA',
+            degree: 'Brevet d\'Aptitude aux Fonctions d\'Animateur',
             summary: ``
         },
         item2: {
             period: {
-                start: 2005,
-                end: 2006,
+                start: 2006,
+                end: 2008
             },
-            location: 'Vannes',
-            school: 'Université de Bretagne SUD',
-            degree: 'IUT Informatique',
-            summary: `IUT en année spéciale suite à mon BTS électronique`
+            location: 'St Jacut les Pins',
+            school: 'Lycée d\'Enseignement Général et Technologique Privé',
+            degree: 'Baccalauréat professionnel Services en Milieu Rural',
+            summary: 'Mention Bien'
+        },
+        item3: {
+            period: {
+                start: 2004,
+                end: 2006
+            },
+            location: 'St Jacut les Pins',
+            school: 'Lycée d\'Enseignement Général et Technologique Privé',
+            degree: 'Brevet d\'Aptitude Professionnelle Agricole Services aux Personnes',
+            summary: ''
         } 
-        
     },
     interests: {
         title: 'Centres d\'intérêts',
         item1: {
-            icon: 'icon--development',
-            caption: 'Développement'
+            icon: 'icon--crea',
+            caption: 'Loisirs créatifs'
         },
-		item2: {
-            icon: 'icon--drilling-machine',
-            caption: 'Bricolage'
+	item2: {
+            icon: 'icon--cuisine',
+            caption: 'Cuisine'
         },
         item3: {
-            icon: 'icon--saddle',
-            caption: 'Sport'
+            icon: 'icon--open-book',
+            caption: 'Ecriture / Lecture'
         }
     }
 };

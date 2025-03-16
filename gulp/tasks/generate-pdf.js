@@ -13,7 +13,7 @@ var pdfGenConfig = {
 }
 
 function pdfGen(isPrintVersion){
-    var fileName = isPrintVersion ? "resume-light.pdf" : "resume-dark.pdf";
+    var fileName = isPrintVersion ? "CV.pdf" : "CV-dark.pdf";
 
     return gulp.src("./app/build/*.html")
     .pipe(through.obj(function(file, enc, cb){

@@ -1,13 +1,13 @@
 .feature{
-    margin-top: 2.0833rem;
+    /*margin-top: 2.0833rem;*/
 
     &--t-margin{
-        margin-top: 2.5rem;
+        /*margin-top: 2.5rem;*/
     }
 
     &--on-bottom{
         position: absolute;
-        top: calc(100% - 9.16667rem);
+        top: calc(100% - 7.16667rem);
         width: calc(100% - 3.3333rem);
     }
 

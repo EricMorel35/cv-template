@@ -15,9 +15,9 @@
         left: 0;
         right: 0;
         margin: auto;
-        width: calc($width - 0.6666667rem);
+        /*width: calc($width - 0.6666667rem);
         height: calc($width - 0.6666667rem);
-        /*border-radius: 50%;*/
-        background: url("../images/profile-photo.jpg") center center/contain no-repeat;
+        border-radius: 50%;*/
+        background: url("../images/mona.jpg") center center/contain no-repeat;
     }
 }

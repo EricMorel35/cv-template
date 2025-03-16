@@ -16,7 +16,7 @@
         border: 1px solid rgba($greyVeryDark, .5);
 
         &__image{
-            background-image: url("../images/profile-photo-light.jpg");
+            background-image: url("../images/mona.jpg");
         }
     }
 

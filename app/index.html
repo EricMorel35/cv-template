@@ -15,7 +15,7 @@
                 <div class="photo">
                     <div class="photo__image"></div>
                 </div>
-                <div class="feature feature--t-margin">
+                <div class="feature feature--t-margin" style="margin-top: 50px;">
                     <h3 class="feature__title feature__title--light-b-border">{{contact.title}}</h3>
                     <div class="feature__content feature__content--l-r-margin">
                         <div class="contact">
@@ -32,48 +32,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="feature">
+                <div class="feature" style="margin-top: 50px;">
                     <h3 class="feature__title feature__title--light-b-border">{{skills.title}}</h3>
                     <div class="feature__content feature__content--l-r-margin">
                         <div class="skills">
                             <ul>
                                 <li>
                                     <h4 class="skills__item-title">{{skills.item1.subject}}</h4>
-                                    <div class="skills__item-bar {{skills.item1.mark}}"></div>
                                 </li>
                                 <li>
                                     <h4 class="skills__item-title">{{skills.item2.subject}}</h4>
-                                    <div class="skills__item-bar {{skills.item2.mark}}"></div>
                                 </li>
                                 <li>
                                     <h4 class="skills__item-title">{{skills.item3.subject}}</h4>
-                                    <div class="skills__item-bar {{skills.item3.mark}}"></div>
                                 </li>
                                 <li>
                                     <h4 class="skills__item-title">{{skills.item4.subject}}</h4>
-                                    <div class="skills__item-bar {{skills.item4.mark}}"></div>
                                 </li>
                                 <li>
                                     <h4 class="skills__item-title">{{skills.item5.subject}}</h4>
-                                    <div class="skills__item-bar {{skills.item5.mark}}"></div>
                                 </li>
                                 <li>
                                     <h4 class="skills__item-title">{{skills.item6.subject}}</h4>
-                                    <div class="skills__item-bar {{skills.item6.mark}}"></div>
                                 </li>
-								<li>
+				<li>
                                     <h4 class="skills__item-title">{{skills.item7.subject}}</h4>
-                                    <div class="skills__item-bar {{skills.item7.mark}}"></div>
                                 </li>
-								<li>
+				<li>
                                     <h4 class="skills__item-title">{{skills.item8.subject}}</h4>
-                                    <div class="skills__item-bar {{skills.item8.mark}}"></div>
+                                </li>
+       				<li>
+                                    <h4 class="skills__item-title">{{skills.item9.subject}}</h4>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="feature feature--on-bottom">
+                <div class="feature" style="margin-top: 50px;">
                    <h3 class="feature__title feature__title--light-b-border">{{lang.title}}</h3>
                    <div class="feature__content feature__content--l-r-margin">
                     <p class="language">
@@ -164,6 +159,18 @@
                                     <h3 class="timeline__event__title">{{education.item2.degree}}</h3>
                                     <h4 class="timeline__event__subtitle">{{education.item2.school}}</h4>
                                     <div class="generic-content-container">{{education.item2.summary}}</div>
+                                </div>
+                            </li>
+                            <li class="row timeline">
+                                <div class="timeline__date col-xs-4">
+                                    {{education.item3.period.start}} - {{education.item3.period.end}}<br>
+                                    {{education.item3.location}}
+                                </div>
+                                <div class="timeline__event col-xs-8">
+                                    <span class="timeline__event__circle-icon timeline__event__circle-icon--short-v-line"></span>
+                                    <h3 class="timeline__event__title">{{education.item3.degree}}</h3>
+                                    <h4 class="timeline__event__subtitle">{{education.item3.school}}</h4>
+                                    <div class="generic-content-container">{{education.item3.summary}}</div>
                                 </div>
                             </li>
                         </ul>

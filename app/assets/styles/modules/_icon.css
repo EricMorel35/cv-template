@@ -5,43 +5,18 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-.icon--compass {
-  background-image: url("../images/icons/compass.svg");
-  width: 1.6666666799999998rem;
-  height: 1.6666666799999998rem;
+.icon--crea {
+  background-image: url("../images/icons/crea.jpg");
+  width: 2.2500000179999997rem;
+  height: 2.041666683rem;
 }
-.icon--circle {
-  background-image: url("../images/icons/circle.svg");
-  width: 0.45833333699999995rem;
-  height: 0.45833333699999995rem;
-}
-.icon--development {
-  background-image: url("../images/icons/development.png");
+.icon--cuisine {
+  background-image: url("../images/icons/cuisine.png");
   width: 2.2500000179999997rem;
   height: 2.2500000179999997rem;
 }
-.icon--drilling-machine {
-  background-image: url("../images/icons/drilling-machine.png");
+.icon--open-book {
+  background-image: url("../images/icons/open-book.png");
   width: 2.2500000179999997rem;
   height: 2.2500000179999997rem;
-}
-.icon--game-controller {
-  background-image: url("../images/icons/game-controller.svg");
-  width: 1.6666666799999998rem;
-  height: 1.6666666799999998rem;
-}
-.icon--saddle {
-  background-image: url("../images/icons/saddle.svg");
-  width: 1.6666666799999998rem;
-  height: 1.6666666799999998rem;
-}
-.icon--github-logo {
-  background-image: url("../images/icons/github-logo.svg");
-  width: 0.500000004rem;
-  height: 0.500000004rem;
-}
-.icon--terminal {
-  background-image: url("../images/icons/terminal.svg");
-  width: 1.6666666799999998rem;
-  height: 1.6666666799999998rem;
 }
