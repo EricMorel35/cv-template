@@ -52,7 +52,7 @@ module.exports = {
         }
     },
     lang: {
-        title: 'Langages',
+        title: 'Langues',
         data: {
             lang1: {
                 caption: 'Français ',
