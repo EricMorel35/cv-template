@@ -57,18 +57,14 @@ module.exports = {
             lang1: {
                 caption: 'Français ',
                 level: 'langue maternelle'
-            },
-            lang2: {
-                caption: 'Anglais ',
-                level: 'notions'
             }
         }
     },
     aboutMe: {
         firstName: 'Mona',
         lastName: 'Guinel',
-        position: 'Intervenante auprès d\'enfants',
-        summary: `Autonome et enthousiaste, je sais animer des activités éducatives et ludiques, assurer la sécurité des enfants et favoriser leur socialisation. <br>Bienveillante et organisée, je recherche un poste d'Auxiliaire de puériculture, pour mettre en pratique mes connaissances et contribuer au bien-être des enfants dans un environnement stimulant et sécurisant.`
+        position: 'Auxiliaire de puériculture',
+        summary: `Souhaitant débuter une reconversion professionnelle, je recherche une formation d'auxiliaire de puériculture.<br>Bienveillante et organisée, j'aimerais contribuer au bien-être des enfants dans un environnement stimulant et sécurisant.`
     },
     experience:{
         title : 'Expériences',
