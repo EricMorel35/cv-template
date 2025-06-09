@@ -14,7 +14,7 @@ module.exports = {
         },
         item2: {
             caption: 'E-Mail ',
-            data: '<a href="mailto:mimimoys@yahoo.fr?subject=Contact">mimimoys@yahoo.fr</a>'
+            data: '<a href="mailto:mona.guinel@yahoo.com?subject=Contact">mona.guinel@yahoo.com</a>'
         },
         item3: {
             caption: 'Adresse ',
@@ -48,7 +48,7 @@ module.exports = {
             subject: 'Ponctualité'
         },
         item9:{
-            subject: 'Organisée'
+            subject: 'Organisation'
         }
     },
     lang: {

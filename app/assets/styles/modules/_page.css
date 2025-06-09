@@ -7,7 +7,7 @@
         color: $greyLight;
 
         &--dark{
-            background-color: $greyDark;
+            background-color: $purple;
         }
     }
 
