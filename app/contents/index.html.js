@@ -4,7 +4,7 @@ var date = dateformat(new Date(), 'yyyy');
 
 module.exports = {
     document: {
-        title: "Mona GUINEL"
+        title: "Mona GUINEL" //Test
     },
     contact: {
         title: 'Contact',
