@@ -13,7 +13,7 @@ var pdfGenConfig = {
 }
 
 function pdfGen(isPrintVersion){
-    var fileName = isPrintVersion ? "CV.pdf" : "CV-dark.pdf";
+    var fileName = isPrintVersion ? "CV.pdf" : "CV-purple.pdf";
 
     return gulp.src("./app/build/*.html")
     .pipe(through.obj(function(file, enc, cb){
@@ -25,7 +25,7 @@ function pdfGen(isPrintVersion){
         // set html background color to white to avoid artifacts
         $("html").css("background-color", "#fff");
 
-        // choose dark or light template version
+        // choose purple or light template version
         if(isPrintVersion){
             $("html").addClass("print-version");
         }else{
