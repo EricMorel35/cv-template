@@ -18,8 +18,6 @@
         text-transform: uppercase;
         border-width: 1px;
         padding-left: 0.8333rem;
-        padding-bottom: 0.41667rem;
-        margin-bottom: 1.25rem;
 
         &--light-b-border{
             border-bottom: 1px solid rgba($greyLight, .3);
@@ -27,13 +25,6 @@
     
         &--dark-b-border{
             border-bottom: 1px solid rgba($greyDark, .3);
-        }
-    }
-
-    &__content{
-        &--l-r-margin{
-            margin-left: 0.41667rem;
-            margin-right: 0.41667rem;
         }
     }
 }

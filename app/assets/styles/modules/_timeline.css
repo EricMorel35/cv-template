@@ -12,7 +12,6 @@
     }
     
     &__date{
-        font-weight: 700;
         width: 30%;
         vertical-align: top;
         margin-top: -0.20833rem;
@@ -20,7 +19,7 @@
     
     &__event{
         width: 70%;
-        padding-bottom: 0.83333rem;
+        padding-bottom: 0.63333rem;
         
         &__circle-icon{
             position: absolute;
