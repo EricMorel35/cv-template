@@ -184,7 +184,8 @@ module.exports = function (file, urlBase = '../fonts') {
             format = 'truetype';
         }
 
-        var url = 'url(\'' + urlBase + '/' + chunk.relative + extExtra + '\') format(\'' + format + '\')';
+        var relativeUrl = chunk.relative.split(path.sep).join('/');
+        var url = 'url(\'' + urlBase + '/' + relativeUrl + extExtra + '\') format(\'' + format + '\')';
         var foundBasename = false;
 
         for (var i = 0; i < fontFaceArr.length; i++) {
