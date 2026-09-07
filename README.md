@@ -21,15 +21,17 @@ The objective of this project was to develope a good-looking single page curricu
 
 This template depends on:
 
-- <a href="https://nodejs.org/" target="_blank">**node 8.x**</a>
-- <a href="https://gulpjs.com/" target="_blank">**gulp**</a>
+- <a href="https://nodejs.org/download/release/v10.24.1/" target="_blank">**node 10.x**</a>
+- <a href="https://gulpjs.com/" target="_blank">**gulp 3.9.1**</a>
 - **Google Fonts** (<a href="https://fonts.google.com/specimen/Josefin+Sans" target="_blank">**Josefin-Sans**</a> and <a href="https://fonts.google.com/specimen/Raleway" target="_blank">**Raleway**</a>)
 
 The project uses **phantomjs** to transform HTML to PDF. Unfortunately phantomjs can't handle custom fonts defined with @font-face property. To get phantomjs to render HTML files correctly you will need to install fonts on your system.
 
+> ⚠️ **Node version matters.** This template is built on **gulp 3.9.1**, which was never updated for modern Node. Anything newer than **Node 10.x** crashes on startup with `ReferenceError: primordials is not defined` (an old `graceful-fs`/`natives` dependency poking at Node internals that no longer exist). Do **not** install the current Node LTS for this project.
+
 ### Installation (Windows)
 
-1. Download and install the LTS version of <a href="https://nodejs.org/" target="_blank">**Node**</a>
+1. Download and install <a href="https://nodejs.org/download/release/v10.24.1/" target="_blank">**Node 10.24.1**</a> (last release of the 10.x branch). If you already have a newer Node installed system-wide and don't want to replace it, just unzip the **node-v10.24.1-win-x64** archive into a local folder inside the project (e.g. `.node-local/`) and call that `node.exe` directly instead of the global one — see the [Build](#build) and [Live Preview](#live-preview) sections below.
 2. Download and unzip the <a href="https://github.com/frontant/cv-template/archive/master.zip" target="_blank">**cv-template-master**</a>
 3. Open the terminal (cmd.exe) and run commands:
 
@@ -40,6 +42,36 @@ The project uses **phantomjs** to transform HTML to PDF. Unfortunately phantomjs
 ```
 
 4. Now setup fonts. Change to the folder **cv-template-master/app/assets/fonts/**. Open the folder **Raleway**. **Select all fonts** in there and click on the selection with the **right mouse button**, than choose **install**. Do the same with **Josefin_Sans**.
+
+#### Install fonts without a logoff (Windows)
+
+The right-click **install** above needs admin rights and only takes effect for the current user at the **next logon** — annoying if you just want to build now. To skip both restrictions, install per-user and load the fonts into the running session in one go with PowerShell:
+
+```powershell
+# copy the fonts to the per-user font folder and register them (no admin needed)
+$fontsDest = "$env:LOCALAPPDATA\Microsoft\Windows\Fonts"
+New-Item -ItemType Directory -Force -Path $fontsDest | Out-Null
+$regKey = "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\Fonts"
+Get-ChildItem "app\assets\fonts\Raleway\*.ttf", "app\assets\fonts\Josefin_Sans\*.ttf" | ForEach-Object {
+    Copy-Item $_.FullName "$fontsDest\$($_.Name)" -Force
+    Set-ItemProperty -Path $regKey -Name "$($_.BaseName -replace '-', ' ') (TrueType)" -Value $_.Name -Force
+}
+
+# load them into the current session right away, no logoff/restart required
+Add-Type -TypeDefinition @'
+using System;
+using System.Runtime.InteropServices;
+public class FontApi {
+  [DllImport("gdi32.dll")] public static extern int AddFontResourceW(string lpFileName);
+  [DllImport("user32.dll")] public static extern int SendMessageTimeout(IntPtr hWnd, int Msg, IntPtr wParam, string lParam, int fuFlags, int uTimeout, out IntPtr res);
+}
+'@
+Get-ChildItem "$fontsDest\*.ttf" | ForEach-Object { [FontApi]::AddFontResourceW($_.FullName) } | Out-Null
+$res = [IntPtr]::Zero
+[FontApi]::SendMessageTimeout([IntPtr]0xffff, 0x1D, [IntPtr]::Zero, $null, 0, 1000, [ref]$res) | Out-Null
+```
+
+The `SendMessageTimeout` broadcast (`WM_FONTCHANGE`) is the pirouette that tells every running app to re-read the font list immediately, so gulp/phantomjs picks the fonts up without you having to log off and back on.
 
 ### Installation (Linux)
 
