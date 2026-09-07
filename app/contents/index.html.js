@@ -4,7 +4,7 @@ var date = dateformat(new Date(), 'yyyy');
 
 module.exports = {
     document: {
-        title: "Mona GUINEL" //Test
+        title: "Mona MOREL" //Test
     },
     contact: {
         title: 'Contact',
@@ -41,7 +41,7 @@ module.exports = {
     },
     aboutMe: {
         firstName: 'Mona',
-        lastName: 'Guinel',
+        lastName: 'Morel',
         position: 'Auxiliaire de puériculture',
         summary: `Autonome et enthousiaste, j’aime animer des activités éducatives et ludiques,
 assurer la sécurité des enfants et favoriser leur socialisation.
