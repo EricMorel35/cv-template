@@ -1,3 +1,5 @@
 .os-windows{
-    transform: scale($pageZoomOnWindows);
+    /* PhantomJS ignores transforms on the root element when printing, use zoom instead */
+    transform: none;
+    zoom: $pageZoomOnWindows;
 }

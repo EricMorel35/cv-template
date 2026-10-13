@@ -1,6 +1,6 @@
 /* page options */
 $pageZoom: 1;                  /* scales page */
-$pageZoomOnWindows: 1.333;     /* scales page on Windows */
+$pageZoomOnWindows: 1.665;     /* scales page on Windows (PDF) */
 $pageBorder: 0px;              /* sets the border size of the page */
 
 /* page dimension */
